@@ -1,0 +1,49 @@
+#google_lens{
+    width: 100px;
+}
+.header{
+    font-size: 23px;
+    width: 100%;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.header span{
+    font-size: 23px;
+}
+.output {
+    background: #949494;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 18px grey;
+}
+ol img{
+    width: 250px;
+    height: 250px;
+}
+.conclusion{
+    background-color: rgba(255, 192, 203, 0.87);
+    box-shadow: 5px 5px 5px gray;
+    border: 3px ridge pink;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px !important;
+}
+.copyright_footer{
+    bottom:0;
+    text-align: center;
+    background-color: darkcyan;
+    box-shadow: 5px 5px 5px gray !important;
+    color: white;
+    font-family: monospace !important;
+    border-radius: 10px;
+    line-height: 3;
+    position: fixed;
+    width: 100%;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mobilenet vs Google Lens - Case Study</title>
+</head>
+<body>
+    <center>
+<h3 class = "btn btn-warning header">Google Lens <img id = "google_lens" src="background.png">
+<br>
+VS
+<br><br>
+<span class = "btn btn-primary">Mobilenet</span>
+<br><br>
+<span class = "text-danger">A case study between two Image Identification Applications / Web Applications.</span>
+</h3>
+<hr>
+<br><br>
+<ol style="padding:0px;">
+    <div class = container>
+    <div class="output col-xs-12">
+
+        <li class="col-sm-4 col-xs-12">
+            <b style="color: white;">Image - </b>
+            <img src="Ballpoint Pen.jpeg" alt="">
+        </li>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b> -
+            <span>Rollerball / Ballpoint Pen </span>  
+        </h5>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet </b> -
+            <span>Ballpoint Pen</span>  
+        </h5>
+
+        <div class="output3">
+            <h4>Result - </h4>
+            <hr>
+            <h4>Both Mobilenet and Google Lens were able to identify. 1:1!</h4>
+        </div>
+
+    </div>
+    <br>
+
+    <div class="output col-xs-12">
+
+        <li class="col-sm-4 col-xs-12">
+            <b style="color: white;">Image -</b>
+            <img src="Printer.jpeg" alt="">
+        </li>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b> -
+            <span>LaserJet Printer</span>  
+        </h5>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet </b> -
+            <span>Printer</span>  
+        </h5>
+
+        <div class="output3">
+            <h4>Result - </h4>
+            <hr>
+            <h4>Both got "Printer" right, but Google Lens gave the most accurate answer with adding "LaserJet" to it.
+                2:1!
+            </h4>
+        </div>
+
+    </div>
+            
+    <br>
+
+    <div class="output col-xs-12">
+
+        <li class="col-sm-4 col-xs-12">
+            <b style="color: white;">Image - </b>
+            <img src="Compass Box.jpeg" alt="">
+        </li>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b> -
+            <span>Pencil Box</span>  
+        </h5>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet </b> -
+            <span>Pencil Box</span>  
+        </h5>
+
+        <div class="output3">
+            <h4>Result - </h4>
+            <hr>
+            <h4>Both were absolutely correct, as well as accurate in guessing the item. 3:2!</h4>
+        </div>
+
+    </div>
+            
+    <br>
+
+    <div class="output col-xs-12">
+
+        <li class="col-sm-4 col-xs-12">
+            <b style="color: white;">Image - </b>
+            <img src="Controller.jpeg" alt="">
+        </li>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b> -
+            <span>Xbox One (S) Controller</span>  
+        </h5>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet </b> -
+            <span>Joystick</span>  
+        </h5>
+
+        <div class="output3">
+            <h4>Result - </h4>
+            <hr>
+            <h4>Mobilenet was not accurate. Google Lens was guessed it correct as it being a Controller from the "Xbox One" series, mainly the "One S"
+                4:2!
+            </h4>
+        </div>
+
+    </div>
+            
+    <br>
+
+    <div class="output col-xs-12">
+
+        <li class="col-sm-4 col-xs-12">
+            <b style="color: white;">Image - </b>
+            <img src="Guitar.jpeg"` alt="">
+        </li>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b> -
+            <span>Acoustic Guitar</span>  
+        </h5>
+        <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet </b> -
+            <span>Acoustic Guitar</span>  
+        </h5>
+
+        <div class="output3">
+            <h4>Result - </h4>
+            <hr>
+            <h4>The Acoustic guitar is not autographed, but Google Lens stil got it right!
+                5:3!
+            </h4>
+        </div>
+
+    </div>
+            
+    <br>
+</div>
+<br>
+<div class = "conclusion">
+    <h3>
+My Conclusion:
+I tested 5 images, out of which Google Lens got all of them accurately right, and Mobilelens only detected 3 correct.
+Therefore, I can conclude that Google Lens is **THE MOST** accurate Image Identifier to exist.
+    </h3>
+</div>
+</ol>
+</div>
+<br><br><br>
+</center>  
+<div class = "copyright_footer">Developed by - Aayan Baig</div>
+
+</body>
+</html>
